@@ -6,13 +6,43 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.happybirthday.MainActivity">
 
+    <ImageView
+        android:id="@+id/image_view"
+        android:src="@drawable/jack_smile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
     <TextView
+        android:id="@+id/just_because"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        android:fontFamily="casual"
+        android:text="Just Because..."
+        android:textStyle="bold"
+        android:textSize="38sp"
+        android:textColor="@color/colorPrimary"
+         />
+
+    <TextView
+        android:id="@+id/thinking_you"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="38sp"
+        android:fontFamily="casual"
+        android:gravity="end"
+        android:paddingLeft="15dp"
+        android:text="I like you, Lloyd; I've always liked you!"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
